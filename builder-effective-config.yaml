@@ -1,0 +1,23 @@
+directories:
+  output: build
+  buildResources: build
+productName: 影片路径处理工具
+appId: com.example.yourapp
+win:
+  target:
+    - target: nsis
+      arch:
+        - ia32
+    - target: squirrel
+      arch:
+        - ia32
+nsis:
+  oneClick: false
+  perMachine: true
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+squirrelWindows:
+  iconUrl: 'http://senyu-img.oss-cn-hangzhou.aliyuncs.com/images/2020/12/27/isux.jpg'
+electronVersion: 11.2.1
